@@ -1,0 +1,32 @@
+c{% extends "learn.html" %}
+{% block title %}CH1 | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='learn.css')}}"><link rel="stylesheet" href="{{url_for('static', filename='ch1.css')}}">{% endblock %}
+
+{% block ch %}Chapter 3{% endblock %}
+{% block para %}
+<p>
+    <u>3.1 Importance of Reliable Information</u><br>
+    In a crisis, access to accurate and up-to-date information is crucial. It helps you make informed decisions and take appropriate actions to protect yourself and your loved ones.
+</p>
+    <br>
+<p><u>3.2 Trusted Sources</u><br>
+    <ul>
+        <li>Government Announcements: Official updates from local, regional, and national authorities provide critical information and guidelines.</li>
+        <li>Reputable News Outlets: Reliable media organizations, both online and offline, offer verified information and in-depth analysis.</li>
+        <li>Community Platforms: Websites and forums dedicated to sharing information and resources, such as "Unite Against the Unseen Threat," are valuable for staying connected and informed.</li>
+    </ul>
+</p><br>
+<p>
+    <u>3.3 Identifying Misinformation</u>
+    <ul>
+        <li>Cross-Check Sources: Verify information from multiple reputable sources to ensure accuracy.</li>
+        <li>Critical Thinking: Question sensationalist or unverified claims. Use critical thinking to assess the credibility of information.</li>
+        <li>Community Vigilance: Report and correct misinformation within your community. Educate others about the importance of reliable information.</li>        
+
+    </ul>
+</p><br>
+{% endblock %}
+
+{% block href %}
+<a  href="/learn/ch4">Read Chapter 4</a>
+{% endblock %}

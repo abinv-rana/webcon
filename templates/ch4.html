@@ -1,0 +1,41 @@
+c{% extends "learn.html" %}
+{% block title %}CH1 | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='learn.css')}}"><link rel="stylesheet" href="{{url_for('static', filename='ch1.css')}}">{% endblock %}
+
+{% block ch %}Chapter 4: Practical Safety Measures{% endblock %}
+{% block para %}
+<p>
+    <u>4.1 Emergency Preparedness</u><br>
+    <ul>
+        <li>Emergency Kit: Assemble a kit with essentials such as non-perishable food, water, medications, flashlight, batteries, and a first-aid kit. Regularly check and update the contents.</li>
+        <li>Emergency Plan: Develop a family emergency plan, including meeting points, communication strategies, and evacuation routes. Practice the plan regularly to ensure everyone is familiar with it.</li>
+    </ul>
+</p>
+    <br>
+<p><u>4.2 Energy Conservation</u><br>
+    <ul>
+        <li>During Outages: Use candles and battery-powered devices to conserve energy. Avoid opening refrigerators and freezers to maintain cold temperatures. Consider alternative cooking methods such as camping stoves.</li>
+        <li>Preparation: Invest in backup power sources such as generators, solar-powered chargers, or portable power banks. Ensure they are maintained and ready for use.</li>
+    </ul>
+</p><br>
+<p>
+    <u>4.3 Communication Plans</u>
+    <ul>
+        <li>Alternative Methods: Use walkie-talkies, landlines, or pre-arranged signals to communicate during outages. Establish a communication plan with family and friends.</li>
+        <li>Emergency Contacts: Maintain a list of emergency contacts, including family members, neighbors, and local authorities. Share this list with your household and keep it easily accessible.</li>
+    </ul>
+</p><br>
+<p>
+    <u>4.4 Transportation Alternatives</u>
+    <ul>
+        <li>Public Transport: Keep up-to-date with service status and have alternate routes planned. Use public transportation apps and websites for real-time information.</li>
+        <li>Private Transport: Ensure your vehicle is well-maintained and have a fuel reserve. Keep a car emergency kit with essentials such as spare tires, tools, and a first-aid kit.</li>
+        <li>Bicycles and Walking: Consider non-motorized transportation options in case of vehicle failures. Ensure you have appropriate gear and know safe routes.
+        </li>
+    </ul>
+</p>
+{% endblock %}
+
+{% block href %}
+<a  href="/learn/ch5">Read Chapter 5</a>
+{% endblock %}

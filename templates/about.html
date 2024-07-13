@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}About | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='about.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="about">
+        <h1 class="abouth1">About</h1>
+        <br>
+        <br>    
+        <p>"We Stand Together" is a platform developed by the last remaining website developer, with the aim of fostering unity and resilience in the face of a mysterious and pervasive global threat. As unexplained disruptions continue to affect our communication systems, infrastructure, and daily lives, it is more crucial than ever for us to come together, stay informed, and support one another. This website serves as a hub for the latest updates, educational resources, and a community space where individuals can share their experiences and find solace in collective strength. Our mission is to empower and educate, ensuring that we can navigate this crisis and emerge stronger together.</p>       
+    </div>
+{% endblock %}

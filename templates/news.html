@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}News | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='news.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="news">
+    <h1 class="newsh1"> News</h1>
+    
+    {% for item in  value %}
+        <div class="article-flex">
+            <div class="article">
+                <span class="date">{{item.date}}</span>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <h1 class="article-title">{{item.title}}</h1>
+                <br>
+                <p class="article-content">{{item.content}}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+
+</div>
+{% endblock %}

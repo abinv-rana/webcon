@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Admin | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='admin.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="admin">
+        <div class="header">
+            <h1 class="adminh1">Admin Page</h1>   
+            <a href="/logout">Logout</a>       
+        </div>
+        <div class="admin-flex">
+            <div class="admin-form">
+                <form action="#" method="POST" class="form">
+                    <h1>New Post</h1>
+                    <br>
+                    <br>
+                    <label for="title" class="title-label">Title:-</label>
+                    <input type="text" required name="title" title="title" class="title-input">
+                    <br>
+                    <label for="content" class="content-label">Content:-</label>
+                    <textarea maxlength="1000"  name="content" class="content" placeholder="Write news here..."></textarea>
+                    <br>
+                    <input type="submit" class="submit-btn" value="Post" required>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

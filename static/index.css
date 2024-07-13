@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.mesg {
+    padding: 20px;
+    background-color: #001f7a;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+}
+  
+.close-btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.close-btn:hover {
+    color: black;
+}
+
+.navbar{
+    text-decoration: none;
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 10px;
+}
+
+.heading{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #090934;
+}
+
+hr{
+    box-shadow: 0 0 1px white;
+}
+
+.container{
+    padding: 20px;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.nav-item li a {
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.nav-item li a:hover {
+    background-color: #11115f;
+    color: white;;
+}
+
+.sidebar li{
+    list-style: none;
+    margin: 20px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    width: 80%;
+}
+
+.sidebar li a:hover {
+    background-color: #11115f;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    width: 90%;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    padding-top: 10px;
+    transition: all .2s;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.logo{
+    height: 32px;
+    margin-right: 10px;
+}
+
+.navbar span{
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-div{
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.footer-div span, a[href = '/auth'] {
+    margin-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+a[href = '/auth']:hover{
+    text-decoration: underline solid 2px white;
+}
+
+.footer-logo{
+    transform: translate(-25%);
+    max-width: 100px;
+
+}
+.aa{
+    text-align: right;
+}
+
+@media(max-width :800px){
+    a[href="/auth"]{
+        text-decoration: underline solid 2px white;
+    }
+    .hideonmobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 5px;
+        margin: 10px;
+    }
+    .logo{
+        height: 10px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .footer-div{
+        flex-direction: column;
+
+    }
+    .footer-logo{
+        transform: none;
+    }
+    .aa{
+        text-align: center;
+    }
+    .mesg{
+        width: 90%;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}

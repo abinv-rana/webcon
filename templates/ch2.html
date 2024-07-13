@@ -1,0 +1,39 @@
+{% extends "learn.html" %}
+{% block title %}CH1 | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='learn.css')}}"><link rel="stylesheet" href="{{url_for('static', filename='ch1.css')}}">{% endblock %}
+
+{% block ch %}Chapter 2{% endblock %}
+{% block para %}
+<p>
+    <u>2.1 Communication Glitches</u>
+</p>
+    <ul>
+        <li>Symptoms: Dropped calls, slow internet speeds, and loss of satellite signals. These issues can happen unexpectedly and may last for extended periods.</li>
+        <li>Consequences: Hindered communication affects personal interactions, professional activities, and emergency response capabilities. It can lead to isolation and difficulty in accessing critical information.</li>
+    </ul>
+    <br>
+<p><u>2.2 Power Outages</u><br>
+    <ul>
+        <li>Symptoms: Unexplained blackouts, brownouts, and electrical surges. These outages can be localized or widespread, affecting entire regions.</li>
+        <li>Consequences: Power outages disrupt daily activities, pose safety hazards, and lead to significant economic losses. They can also affect critical infrastructure such as hospitals and emergency services.</li>
+    </ul>
+</p><br>
+<p>
+    <u>2.3 Infrastructure Failures</u>
+    <ul>
+        <li>Symptoms: Malfunctions in transportation systems, public utilities, and essential services. These failures can cause significant disruptions to daily life.</li>
+        <li>Consequences: Travel disruptions, compromised safety, and interrupted services impact individuals and communities. Infrastructure failures can also lead to secondary issues such as water shortages and waste management problems.</li>
+    </ul>
+</p><br>
+<p>
+    <u>2.4 Psychological Effects</u>
+    <ul>
+        <li>Symptoms: Increased levels of stress, anxiety, and fear within the population. These feelings are often exacerbated by the uncertainty and unpredictability of the threat.</li>
+        <li>Symptoms: Increased levels of stress, anxiety, and fear within the population. These feelings are often exacerbated by the uncertainty and unpredictability of the threat.</li>
+    </ul>
+</p>
+{% endblock %}
+
+{% block href %}
+<a  href="/learn/ch3">Read Chapter 3</a>
+{% endblock %}

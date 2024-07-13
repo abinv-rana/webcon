@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Login | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='auth.css')}}">{% endblock %}
+{% block content%}
+<div class="auth">
+    <h1 class="authh1">Login Page</h1>
+    <div class="auth-flex">
+        <div class="auth-form">
+            <form action="#" method="POST" class="form">
+                <h1>Login</h1>
+                <br>
+                <br>
+                <label for="id" class="id-label">Admin ID:-</label>
+                <input required name="id" title="id" class="id-input">
+                <br>
+                <label for="password" class="password-label">Password:-</label>
+                <input type="password" required name="password" title="password" class="password input">
+                <br>
+                <input type="submit" class="submit-btn" value="Login" required>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

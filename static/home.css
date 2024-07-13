@@ -1,0 +1,64 @@
+.text h1{
+    font-family:  "Share Tech", sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.main{
+    display: flex;
+    width: 70%;
+    padding-left:15%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.united{
+    max-width: 450px;
+    max-height: 400px;
+    margin-right: 40px;
+    float: left;
+}
+
+.text p{
+    color: white;  
+    font-size: 20px;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.newsh1{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.latestnews{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+}
+
+@media(max-width:800px){
+    .text p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .united{
+        max-width: 300px;
+        margin-right: 0px;
+        max-height: 250px;
+    }
+    .latestnews{
+        margin-left: 0;
+        width: 100%;
+    }
+}

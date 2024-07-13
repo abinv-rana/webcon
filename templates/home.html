@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='home.css')}}"><link rel="stylesheet" href="{{url_for('static', filename='news.css')}}">{% endblock %}
+{% block content%}
+<div class="main">
+    <div class="text">
+        <img src="static/images/1.png" class="united" alt="Image">
+        <h1>United we stand<br>Divided we fall</h1>
+        <br>
+        <p>Our world is experiencing mysterious disruptions, from communication breakdowns to infrastructure malfunctions, all contributing to a growing sense of unease. In these uncertain times, unity and knowledge are our greatest tools. Here, you'll find the latest updates on the situation, educational resources to help you understand the threat, and a community space where you can connect with others, share your experiences, and find support. Together, we can navigate this crisis and emerge stronger. Join us, stay informed, and be a part of the solution.</p>
+    </div>   
+</div>
+<div class="latestnews">
+    <h1 class="newsh1">Latest News</h1>
+    <div class="article-flex">
+        <div class="article">
+            <span class="date">{{value.date}}</span>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h1 class="article-title">{{value.title}}</h1>
+            <br>
+            <p class="article-content">{{value.content}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

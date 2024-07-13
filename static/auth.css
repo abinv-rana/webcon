@@ -1,0 +1,97 @@
+.authh1{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.auth{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.auth-flex{
+    display: flex;
+}
+
+.auth-form{
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+
+.form{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+input[name='id'], input[name='password']{
+    font-size: 25px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+    border: solid 1px grey;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+.password:focus,.form input[name='id']:focus, .password:hover, .form input[name = 'id']:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.0005);
+
+}
+
+.submit-btn{
+    margin-left: 25%;
+    padding: 10px;
+    width: 50%;
+    background: none;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 25px;
+    transition: all .2s;  
+}
+
+.submit-btn:hover, .submit-btn:focus{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+@media(max-width:800px){
+    .submit-btn{
+        margin-left: 0;
+        width: 100%;
+    }
+    .auth{
+        margin-left: 0%;
+        width: 100%
+    }
+    .form{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .auth-form{
+        padding: 25px;
+    }
+    .authh1{
+        font-size: 30px;
+    }
+}

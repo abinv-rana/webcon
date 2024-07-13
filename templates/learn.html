@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Learn | WST{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{url_for('static', filename='learn.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="news">
+    <h1 class="learnh1">A guide on how to face the unkown</h1>
+    <div class="article-flex">
+        <div class="article">
+            <h1>{% block ch %}{% endblock %}</h1> 
+            {% block para %}<p>In an increasingly interconnected and technologically advanced world, the sudden emergence of an unseen, disruptive force has thrown our global society into disarray. This enigmatic threat, though mysterious in its origin, has manifested through widespread communication glitches, power outages, infrastructure malfunctions, and a pervasive sense of unease. Its effects are felt in every corner of the globe, impacting millions and causing a profound sense of uncertainty and fear. In this handbook, we aim to equip you with the knowledge and tools to understand, recognize, and respond to this unprecedented crisis. Through practical safety measures, reliable information channels, and community resilience strategies, we can navigate these turbulent times and safeguard our future. Together, we stand strong against the unknown.</p>{% endblock %}       
+            <div class="link">
+                {% block href %}<a href="/learn/ch1">Read Chapter 1</a>{% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

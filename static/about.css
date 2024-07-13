@@ -1,0 +1,23 @@
+.abouth1{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.about{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.about p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+    .about p{
+        margin-left: 0;
+    }
+}
