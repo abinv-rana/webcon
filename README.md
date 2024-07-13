@@ -8,17 +8,18 @@ password = 123456<br>
 clone the repo<br>
 ```
 git clone https://github.com/abinv-rana/webcon
-cd webcon
 ```
 
 create venv<br>
 ```
-python -m venv virtualenv
+python -m venv webcon
 ```
-
+```
+cd webcon
+```
 activate virtual env<br>
 ```
-virtualenv\scripts\activate
+scripts\activate
 ```
 
 install python libraries<br>
